@@ -1,0 +1,34 @@
+visit = {true, false, ..., false}
+deg = {0, 0, ..., 0}
+
+cost = [-1,1,-1,62],
+       [ ,-1, , ],
+       [ , ,-1, ],
+       [ , , ,-1]
+
+best = +infinite
+
+Function Ze(v, c):
+    if c>= best then
+        return
+    if v = n-1 then
+        best = c
+        return
+    
+    for i = 1 to n do
+        if visit[i] = true and deg[i]<k then
+            for int j = 1 to n then
+                if visit[j] = false and cost[i][j]>=0 then
+                    
+                    visit[j] = true
+                    deg[i]+=1
+                    deg[j]+=1
+                    Ze(v+1, c+cost[i][j])
+                    visit[j] = false
+                    deg[i]-=1
+                    deg[j]-=1
+
+
+function call:
+	visit[0] = true;
+	exC(0, 0, n, k);
