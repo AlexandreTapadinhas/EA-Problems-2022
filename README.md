@@ -9,3 +9,4 @@ E -> Optimizing time of wait on a restaurante by schedulling pizzas between two 
 F -> Find minimum number of guards to guard a hall with art pieces __(done)__ <br>
 G -> __(not done)__ <br>
 H -> Check if data is corrupted by checking connections of 2 different types (trains/stations) and if all the pairs of different type objects add up. __(done)__ <br>
+I - > Plan vacations and return the shortest path to end_point __(done)__ <br>
